@@ -1,55 +1,56 @@
-// import { useState } from "react";
-// import axios from "axios";
-// import { baseURL, config } from "../services";
+import { useState } from "react";
+import axios from "axios";
+import { baseURL, config } from "../services";
+import { useHistory } from "react-router-dom";
 
 
-// function Form(props) {
+function Form(props) {
 
-//   const [habit, sethabit] = useState("");
-//   const [time, setTime] = useState(1);
-//   const [notes, setNotes] = useState("Anonymous");
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     // make a creature object
-//     // creature object have all the properties from state
-//     const fields = {
-//       habit,
-//       time,
-//       notes,
-//     };
-//     // axios call to POST the new creature
-//     await axios.post(baseURL, { fields }, config);
-//     // toggling our GET request
-//     console.log("success!");
-//   };
-//   return (
-//     <form onSubmit={handleSubmit}>
-//       <h4>Make a New Creature!</h4>
-//       <label htmlFor="name">Name:</label>
-//       <input
-//         name="name"
-//         type="text"
-//         value={name}
-//         onChange={(e) => setName(e.target.value)}
-//       />
-//       <label htmlFor="rating">Rating:</label>
-//       <input
-//         name="rating"
-//         type="number"
-//         min="1"
-//         max="5"
-//         value={rating}
-//         onChange={(e) => setRating(e.target.valueAsNumber)}
-//       />
-//       <label htmlFor="author">Author:</label>
-//       <input
-//         name="author"
-//         type="text"
-//         value={author}
-//         onChange={(e) => setAuthor(e.target.value)}
-//       />
-//       <button type="submit">Cuttlefish!</button>
-//     </form>
-//   );
-// }
-// export default Form;
+  const [habit, setHabit] = useState("");
+  const [duration, setDuration] = useState("");
+  const [benefits, setBenefits] = useState("");
+  const history = useHistory()
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // make a creature object
+    // creature object have all the properties from state
+    const fields = {
+      habit: habit,
+      duration: duration,
+      benefits: benefits,
+    };
+    // axios call to POST the new creature
+    await axios.post(baseURL, { fields }, config);
+    // toggling our GET request
+    console.log("success!");
+    history.push("/allhabits")
+  };
+  return (
+    <form onSubmit={handleSubmit}>
+      <h4>Add a New Habit!</h4>
+      <label htmlFor="habit">Habit:</label>
+      <input
+        name="habit"
+        type="text"
+        value={habit}
+        onChange={(e) => setHabit(e.target.value)}
+      />
+      <label htmlFor="duration">Duration:</label>
+      <input
+        name="duration"
+        type="text"
+        value={duration}
+        onChange={(e) => setDuration(e.target.value)}
+      />
+      <label htmlFor="benefits">Benefits:</label>
+      <input
+        name="benefits"
+        type="text"
+        value={benefits}
+        onChange={(e) => setBenefits(e.target.value)}
+      />
+      <button type="submit">Submit</button>
+    </form>
+  );
+}
+export default Form;

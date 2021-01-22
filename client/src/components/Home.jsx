@@ -4,7 +4,7 @@ const Home = (props) => {
       <h2>The Secret of Habits</h2>
       <button>Progress Report</button>
       <button onClick={props.getAllHabits}>List of Daily Habits</button>
-      <button>Add Additional Habits</button>
+      <button onClick={props.addNew}>Add Additional Habits</button>
       
     </div>
   )

@@ -26,7 +26,7 @@ function Form(props) {
     history.push("/allhabits")
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       <h4>Add a New Habit!</h4>
       <label htmlFor="habit">Habit:</label>
       <input
@@ -50,7 +50,7 @@ function Form(props) {
         onChange={(e) => setBenefits(e.target.value)}
       />
       <br />
-        <button type="submit">Submit</button>
+        <button type="submit" className="formButton">Submit</button>
     </form>
   );
 }

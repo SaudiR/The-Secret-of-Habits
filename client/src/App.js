@@ -6,6 +6,8 @@ import "./App.css";
 import Home from "./components/Home";
 import AllHabits from "./components/AllHabits";
 import Form from "./components/Form";
+import Nav from "./components/Nav";
+import Habit from "./components/Habit";
 
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
       setDailyHabits(resp.data.records);
     };
     getDailyHabits();
-  }, [dailyHabits]);
+  }, []);
 
   const getAllHabits = () => {
      history.push("/allhabits")
@@ -33,7 +35,9 @@ function App() {
 
   return (
     <div className="App">
-      
+      <Route>
+        <Nav path="/nav"/>
+      </Route>
       <Route exact path="/">
         <Home getAllHabits={getAllHabits} addNew={addNew}/>
       </Route>
@@ -42,6 +46,9 @@ function App() {
       </Route>
       <Route path="/form">
         <Form addNew={addNew}/>
+      </Route>
+      <Route path="/habit/:id">
+        <Habit dailyHabits={dailyHabits}/>
       </Route>
     </div>
   );

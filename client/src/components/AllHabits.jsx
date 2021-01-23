@@ -1,8 +1,13 @@
+import { Link } from "react-router-dom";
+
 const AllHabits = (props) => {
   return (
-    <div>
+    <div className="list">
       {props.dailyHabits.map((habit) => {
-        return <div>{habit.fields.habit }</div>
+        return <div>
+          <Link to={`/habit/${habit.id}`}>{habit.fields.habit}</Link>
+          
+        </div>
       })}
     </div>
   )

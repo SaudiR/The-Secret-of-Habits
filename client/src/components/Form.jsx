@@ -12,16 +12,16 @@ function Form(props) {
   const history = useHistory()
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // make a creature object
-    // creature object have all the properties from state
+    
+    
     const fields = {
       habit: habit,
       duration: duration,
       benefits: benefits,
     };
-    // axios call to POST the new creature
+    
     await axios.post(baseURL, { fields }, config);
-    // toggling our GET request
+    
     console.log("success!");
     history.push("/allhabits")
   };
@@ -43,13 +43,14 @@ function Form(props) {
         onChange={(e) => setDuration(e.target.value)}
       />
       <label htmlFor="benefits">Benefits:</label>
-      <input
+      <textarea
         name="benefits"
         type="text"
         value={benefits}
         onChange={(e) => setBenefits(e.target.value)}
       />
-      <button type="submit">Submit</button>
+      <br />
+        <button type="submit">Submit</button>
     </form>
   );
 }

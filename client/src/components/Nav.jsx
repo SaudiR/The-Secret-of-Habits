@@ -4,9 +4,9 @@ const Nav = (props) => {
 
   return (
     <nav>
-      <Link to="/">Home Page</Link>
-      <Link to="/allHabits">List of Habits</Link>
-      <Link to="/form">Add a New Habit</Link>
+      <Link style={{ textDecoration: 'none' }}to="/">Home Page</Link>
+      <Link style={{ textDecoration: 'none' }}to="/allHabits">List of Habits</Link>
+      <Link style={{ textDecoration: 'none' }}to="/form">Add a New Habit</Link>
     </nav>
   );
 }

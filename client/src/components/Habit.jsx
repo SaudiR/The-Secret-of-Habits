@@ -8,11 +8,17 @@ const Habit = (props) => {
   console.log(singleHabit)
   return (
     <div>
-      <div>{singleHabit.fields.habit}</div>
+      <div>
+        <h5>Habit: {singleHabit.fields.habit}</h5>
+      </div>
       
-      <div>{singleHabit.fields.duration}</div>
+      <div>
+        <h5>Duration: {singleHabit.fields.duration}</h5>
+      </div>
       
-      <div>{singleHabit.fields.benefits}</div>
+      <div>
+        <h5>Benefits: {singleHabit.fields.benefits}</h5>
+      </div>
      </div>
   )
 }

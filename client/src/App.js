@@ -8,6 +8,8 @@ import AllHabits from "./components/AllHabits";
 import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Habit from "./components/Habit";
+import Footer from "./components/Footer";
+// import Progress from "./components/Progress";
 
 
 function App() {
@@ -23,33 +25,34 @@ function App() {
     getDailyHabits();
   }, []);
 
-  const getAllHabits = () => {
-     history.push("/allhabits")
-    console.log("Saudi")
-  }
+  function App() {
+  const [completed, setCompleted] = useState(0);
 
-  const addNew = () => {
-    history.push("/form")
-   console.log("Saudi")
- }
+  useEffect(() => {
+    setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
+  }, []);
+}
+  
 
   return (
     <div className="App">
-      <Route>
-        <Nav path="/nav"/>
-      </Route>
+      <Nav />
       <Route exact path="/">
-        <Home getAllHabits={getAllHabits} addNew={addNew}/>
+        <Home />
       </Route>
       <Route path="/allhabits">
         <AllHabits dailyHabits={dailyHabits}/>
       </Route>
       <Route path="/form">
-        <Form addNew={addNew}/>
+        <Form />
       </Route>
       <Route path="/habit/:id">
         <Habit dailyHabits={dailyHabits}/>
       </Route>
+      {/* <Route path="/progress">
+        <Progress dailyHabits={dailyHabits}/>
+      </Route> */}
+      <Footer />
     </div>
   );
 }

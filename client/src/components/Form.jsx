@@ -34,6 +34,7 @@ function Form(props) {
         type="text"
         value={habit}
         onChange={(e) => setHabit(e.target.value)}
+        style={{borderColor: '#323031'}}
       />
       <label htmlFor="duration">Duration:</label>
       <input
@@ -41,6 +42,7 @@ function Form(props) {
         type="text"
         value={duration}
         onChange={(e) => setDuration(e.target.value)}
+        style={{borderColor: '#323031'}}
       />
       <label htmlFor="benefits">Benefits:</label>
       <textarea
@@ -48,6 +50,7 @@ function Form(props) {
         type="text"
         value={benefits}
         onChange={(e) => setBenefits(e.target.value)}
+        style={{borderColor: '#323031'}}
       />
       <br />
         <button type="submit" className="formButton">Submit</button>

@@ -7,7 +7,11 @@ const AllHabits = (props) => {
       {props.dailyHabits.map((habit) => {
         return (
         <div>
-            <Link style={{ textDecoration: 'none' }}to={`/habit/${habit.id}`}>{habit.fields.habit}</Link>
+            <Link
+              style={{
+                textDecoration: 'none',
+                color: '#323031',
+              }} to={`/habit/${habit.id}`}>{habit.fields.habit}</Link>
         </div>
       )})} 
     </div>

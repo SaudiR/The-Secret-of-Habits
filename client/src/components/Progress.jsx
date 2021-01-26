@@ -17,7 +17,7 @@ const Progress = (props) => {
     
     if (props.search !== "") {
       const results = props.dailyHabits.filter((habit) => {
-        console.log(habit.fields.habit)
+        // console.log(habit.fields.habit)
         return habit.fields.habit.toLowerCase().includes(props.search.toLowerCase())
       }) 
       setFilteredHabits(results)

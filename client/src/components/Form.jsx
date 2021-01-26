@@ -32,41 +32,25 @@ function Form(props) {
         textDecoration: 'underline'
       }}>Add a New Habit!</h4>
       <label htmlFor="habit">Habit:</label>
-      <input
+      <input className="habitDurationTextarea"
         name="habit"
         type="text"
         value={habit}
-        onChange={(e) => setHabit(e.target.value)}
-        style={{
-          borderColor: '#323031',
-          height: '5vh',
-          width: '400px'
-        }}
-      />
+        onChange={(e) => setHabit(e.target.value)} />
+      
       <label htmlFor="duration">Duration:</label>
-      <input
+      <input className="habitDurationTextarea"
         name="duration"
         type="text"
         value={duration}
-        onChange={(e) => setDuration(e.target.value)}
-        style={{
-          borderColor: '#323031',
-          height: '5vh',
-          width: '400px'
-        }}
-      />
+        onChange={(e) => setDuration(e.target.value)} />
+      
       <label htmlFor="benefits">Benefits:</label>
-      <textarea
+      <textarea id='benefitsTextarea'
         name="benefits"
         type="text"
         value={benefits}
-        onChange={(e) => setBenefits(e.target.value)}
-        style={{
-          borderColor: '#323031',
-          height: '40vh',
-          width: '400px'
-        }}
-      />
+        onChange={(e) => setBenefits(e.target.value)}/>
       <br />
         <button type="submit" className="formButton">Submit</button>
     </form>

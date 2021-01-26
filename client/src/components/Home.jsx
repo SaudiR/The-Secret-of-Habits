@@ -12,7 +12,7 @@ const Home = (props) => {
         right: '20px',
         bottom: '0%',
         top:' 90%',
-      }} to="/AllHabits"><button>Habits</button></Link>
+      }} to="/AllHabits"><button>Self Enchancement</button></Link>
       <Link style={{
         textDecoration: 'none',
         position: 'relative',

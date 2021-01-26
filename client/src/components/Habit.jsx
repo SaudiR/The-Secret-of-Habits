@@ -29,8 +29,12 @@ const Habit = (props) => {
         </div>
 
         <div>
-          <img src={singleHabit.fields.images} />
+          {singleHabit.fields.images.map((picture) => {
+            return <img className="image" src={picture.url} />
+          })
+          }
         </div>
+        
       
       </div>
     )

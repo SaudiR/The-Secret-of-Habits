@@ -63,6 +63,10 @@ button:hover {
   background-color: red;
 }
 
+.buttons {
+
+}
+
 h1 {
   font-family: 'Merriweather', serif;
   /* font-family: 'Marck Script', cursive; */
@@ -151,7 +155,7 @@ margin: 0;
 
 
 @media only screen and (max-width: 600px) {
-  .home {
+  body {
     background-color: red;
   }
   button {
@@ -165,7 +169,7 @@ margin: 0;
 }
 
 @media only screen and (min-width: 1024px) {
-  .home {
+body {
     background-color:blue;
   }
 }

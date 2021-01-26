@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Progress = (props) => {
   const [date, setDate] = useState("")
@@ -37,7 +38,9 @@ const Progress = (props) => {
       {filteredHabits.map((habit) => {
         return (
           <div>
-            {habit.fields.habit}
+            <Link to={`/habit/${habit.id}`}> 
+              {habit.fields.habit}
+            </Link>
           </div>
         )
       })}

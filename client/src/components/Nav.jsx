@@ -4,9 +4,10 @@ const Nav = (props) => {
 
   return (
     <nav>
-      <Link style={{textDecoration: 'none', color: 'white'}} to="/">Home Page</Link>
+      <Link style={{ textDecoration: 'none', color: 'white' }} to="/">Home Page</Link>
       <Link style={{textDecoration: 'none' , color: 'white'}}to="/allHabits">List of Habits</Link>
-      <Link style={{textDecoration: 'none' , color: 'white'}}to="/form">Add a New Habit</Link>
+      <Link style={{ textDecoration: 'none', color: 'white' }} to="/form">Add a New Habit</Link>
+      <Link style={{textDecoration: 'none', color: 'white'}} to="/progress">Search Habit</Link>
     </nav>
   );
 }

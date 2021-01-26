@@ -2,7 +2,7 @@
 
 ## Project Description
 
-The Secret of habits is a self help / self improvemnt app. This app provides users with a many different habits they should developemnt in order to impprove in various different aspects of their lives. Such as education, mental health, fitness, and overall health. Users will see a list of habits, the recommended duration and the benefits of that habit. They will be able to fill out a form to add additional habits. 
+The Secret of habits is a self help / self improvemnt app. This app provides users with a list of different habits they should develop in order to impprove in various different aspects of their lives. Such as education, mental health, fitness, and overall health. Users will see a list of habits, the recommended duration and the benefits of that habit. They will be able to fill out a form to add additional habits. 
 
 ## Wireframes
 

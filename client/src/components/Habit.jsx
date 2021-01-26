@@ -1,13 +1,19 @@
 import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Habit = (props) => {
+  const [singleHabit, setSingleHabit] = useState(null)
   const params = useParams()
-  const singleHabit = props.dailyHabits.find(habit => (
-    params.id === habit.id
-  ))
-  console.log(singleHabit)
+  useEffect(() => {
+    const results = props.dailyHabits.find(habit => (
+      params.id === habit.id
+    ))
+    setSingleHabit(results)
+  }, [])
+  
   return (
     <div>
+      singleHabit !== null &&
       <div className='habit'>
         <h5>Habit: {singleHabit.fields.habit}</h5>
       </div>
@@ -20,7 +26,12 @@ const Habit = (props) => {
         <h5>Benefits: {singleHabit.fields.benefits}</h5>
       </div>
 
-      Recommended Books 
+      {/* <div>
+        <h5>Recommended: {singleHabit.fields.recommendations.thumbnails}</h5>
+      </div> */}
+      <div>
+        <img src={singleHabit.fields.images} />
+      </div>
       
      </div>
   )

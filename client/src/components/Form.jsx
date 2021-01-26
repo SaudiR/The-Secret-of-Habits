@@ -28,14 +28,20 @@ function Form(props) {
   };
   return (
     <form onSubmit={handleSubmit} className="form">
-      <h4>Add a New Habit!</h4>
+      <h4 style={{
+        textDecoration: 'underline'
+      }}>Add a New Habit!</h4>
       <label htmlFor="habit">Habit:</label>
       <input
         name="habit"
         type="text"
         value={habit}
         onChange={(e) => setHabit(e.target.value)}
-        style={{borderColor: '#323031'}}
+        style={{
+          borderColor: '#323031',
+          height: '5vh',
+          width: '400px'
+        }}
       />
       <label htmlFor="duration">Duration:</label>
       <input
@@ -43,7 +49,11 @@ function Form(props) {
         type="text"
         value={duration}
         onChange={(e) => setDuration(e.target.value)}
-        style={{borderColor: '#323031'}}
+        style={{
+          borderColor: '#323031',
+          height: '5vh',
+          width: '400px'
+        }}
       />
       <label htmlFor="benefits">Benefits:</label>
       <textarea
@@ -51,7 +61,11 @@ function Form(props) {
         type="text"
         value={benefits}
         onChange={(e) => setBenefits(e.target.value)}
-        style={{borderColor: '#323031'}}
+        style={{
+          borderColor: '#323031',
+          height: '40vh',
+          width: '400px'
+        }}
       />
       <br />
         <button type="submit" className="formButton">Submit</button>

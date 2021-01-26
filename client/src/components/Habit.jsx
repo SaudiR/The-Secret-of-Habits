@@ -9,31 +9,31 @@ const Habit = (props) => {
       params.id === habit.id
     ))
     setSingleHabit(results)
-  }, [])
+  }, [props.dailyHabits])
   
-  return (
-    <div>
-      singleHabit !== null &&
-      <div className='habit'>
-        <h5>Habit: {singleHabit.fields.habit}</h5>
-      </div>
-      
-      <div className='duration'>
-        <h5>Duration: {singleHabit.fields.duration}</h5>
-      </div>
-      
-      <div className='benefits'>
-        <h5>Benefits: {singleHabit.fields.benefits}</h5>
-      </div>
-
-      {/* <div>
-        <h5>Recommended: {singleHabit.fields.recommendations.thumbnails}</h5>
-      </div> */}
+  if (!singleHabit) {
+    return <div>loading</div>
+  } else {
+    return (
       <div>
-        <img src={singleHabit.fields.images} />
-      </div>
+        <div className='habit'>
+          <h5>Habit: {singleHabit.fields.habit}</h5>
+        </div>
       
-     </div>
-  )
+        <div className='duration'>
+          <h5>Duration: {singleHabit.fields.duration}</h5>
+        </div>
+      
+        <div className='benefits'>
+          <h5>Benefits: {singleHabit.fields.benefits}</h5>
+        </div>
+
+        <div>
+          <img src={singleHabit.fields.images} />
+        </div>
+      
+      </div>
+    )
+  }
 }
 export default Habit;

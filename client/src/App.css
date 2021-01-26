@@ -6,7 +6,7 @@ nav {
   justify-content: space-between;
   color: white;
   background-color: #323031;
-  font-family: 'Marck Script', cursive;
+  font-family: 'Merriweather', serif;
   
 }
 
@@ -18,8 +18,7 @@ form {
   justify-content: center;
   align-items: center;
   color: black;
-  text-shadow: 2px 2px white;
-  font-family: 'Marck Script', cursive;
+  font-family: 'Merriweather', serif;
   font-size: 25px;
 }
 
@@ -44,7 +43,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Marck Script', cursive;
+  font-family: 'Merriweather', serif;
   font-size: 25px;
   border-style: solid;
   color: black;
@@ -52,7 +51,8 @@ button {
 }
 
 h1 {
-  font-family: 'Marck Script', cursive;
+  font-family: 'Merriweather', serif;
+  /* font-family: 'Marck Script', cursive; */
   text-align: center;
   font-size: 45px;
   text-shadow: 2px 2px white;
@@ -125,6 +125,14 @@ margin: 0;
 .benefit {
   flex-direction: column;
   justify-content: space-between;
+}
+
+.habit, 
+.duration, 
+.benefits {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
 }
 
 @media only screen and (max-width: 600px) {

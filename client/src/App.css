@@ -96,7 +96,21 @@ body {
   text-align: center;
   width: 100%;
   margin: 0 auto;
+}
 
+.list {
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+  font-size: 25px;
+  height: 100vh;
+  width: 400px;
+  margin: 50ox 50px 50px 50px;
+  border-style: solid;
+  border-color:  #323031;
+}
+
+.list:hover {
+  text-shadow: black;
 }
 
 .footer h6 {

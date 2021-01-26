@@ -23,6 +23,7 @@ function Form(props) {
     await axios.post(baseURL, { fields }, config);
     
     console.log("success!");
+    props.setToggle(prev => !prev)
     history.push("/allhabits")
   };
   return (

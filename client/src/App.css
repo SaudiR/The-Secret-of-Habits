@@ -248,11 +248,23 @@ align-items: center;
   .allHabits {
     margin-top: 10px;
   }
+
+  label, h4 {
+    color: black;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
 body {
-    background-color:blue;
+    background-color: #463f3a;
+  }
+
+  .form {
+    background-color: #8a817c;
+  }
+
+  label, h4 {
+    color: black;
   }
 }
 

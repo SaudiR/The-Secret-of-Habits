@@ -79,7 +79,7 @@ The Secret of habits is a self help / self improvemnt app. This app provides use
 | January 20th | Prompt / Wireframes / Priority Matrix / Timeframes | Complete |
 | January 20th | Project Approval                                   | Complete |
 | January 25th | MVP                                                | Complete |
-| January 27th | Presentations                                      | Incomplete |
+| January 27th | Presentations                                      | Complete |
 
 ## Timeframes
 
@@ -89,15 +89,15 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component                            | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------------------ | :------: | :------------: | :-----------: | :---------: |
-| Creating homepage                    |    H     |      3hrs      |      5hrs         |             |
-| Retrieving data from api             |    H     |      3hrs      |      5 hrs      |             |
-| Creating list of habit page           |    H     |      3hrs      |       5hrs        |             |
-| Creating form page                   |    H     |      3hrs      |        5hrs       |             |
-| Creating Footer component            |    H     |      1hr       |      1hr        |
-| Adding component for each individual habit  |    L     |      3hrs      |     5hrs          |
-| Styling using css & flexbox          |    H     |      7hrs      |           10hrs    |             |
-| Responsive design / Media query      |    H     |      3hrs      |        1hr       |             |
-| Total                                |          |          26      |         37      |             |
+| Creating homepage                    |    H     |      3hrs      |      5hrs         |        5hrs     |
+| Retrieving data from api             |    H     |      3hrs      |      5 hrs      |         5hrs    |
+| Creating list of habit page           |    H     |      3hrs      |       5hrs        |       5hrs      |
+| Creating form page                   |    H     |      3hrs      |        5hrs       |        5hrs     |
+| Creating Footer component            |    H     |      1hr       |      1hr        |     1hr
+| Adding component for each individual habit  |    L     |      3hrs      |     5hrs          |   5hrs
+| Styling using css & flexbox          |    H     |      7hrs      |           10hrs    |         12hrs    |
+| Responsive design / Media query      |    H     |      3hrs      |        1hr       |        2hrs     |
+| Total                                |          |          26      |         37      |        40     |
 
 ## SWOT Analysis
 

@@ -18,16 +18,16 @@ const Progress = (props) => {
     
     if (props.search !== "") {
       const results = props.dailyHabits.filter((habit) => {
-        // console.log(habit.fields.habit)
         return habit.fields.habit.toLowerCase().includes(props.search.toLowerCase())
       }) 
       setFilteredHabits(results)
     }
   }, [date, props.search])
 
-  // console.log(habitsbyDate)
+
   return (
     <div className="searchPage">
+      <h1>Search for a Habit</h1>
       <input className="searchBar"
         type='text'
         name='search'

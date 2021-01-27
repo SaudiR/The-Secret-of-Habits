@@ -20,7 +20,7 @@ function Form(props) {
       duration: duration,
       benefits: benefits,
       images: images === ""
-          ? "https://i.ibb.co/xjQBgJs/Anonymous-Mask-Hd-Anonymous-mask-by.jpg"
+          ? "https://cdn.powerofpositivity.com/wp-content/uploads/2020/04/einstein-quote.jpg"
         : images,
     };
     
@@ -32,9 +32,7 @@ function Form(props) {
   };
   return (
     <form onSubmit={handleSubmit} className="form">
-      <h4 style={{
-        textDecoration: 'underline'
-      }}>Add a New Habit!</h4>
+      <h4>Add a New Habit!</h4>
       <label htmlFor="habit">Habit:</label>
       <input className="habitDurationTextarea"
         name="habit"

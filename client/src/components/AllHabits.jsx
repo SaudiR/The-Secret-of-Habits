@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 const AllHabits = (props) => {
   return (
     <div className="list">
-      <h1 style={{
-        textDecoration: 'underline'
-      }}>Habits</h1>
+      <h1 className="allHabits">Habits</h1>
       {props.dailyHabits.map((habit) => {
         return (
         <div>

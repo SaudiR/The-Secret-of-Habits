@@ -27,14 +27,14 @@ const Progress = (props) => {
 
   // console.log(habitsbyDate)
   return (
-    <div>
-      <input
+    <div className="searchPage">
+      <input className="searchBar"
         type='text'
         name='search'
         value={props.search}
         onChange={props.handleChange}
       />
-      <input type="date" onChange={(e) => setDate(e.target.value)} />
+      {/* <input className="dateSearch" type="date" onChange={(e) => setDate(e.target.value)} /> */}
       {filteredHabits.map((habit) => {
         return (
           <div>

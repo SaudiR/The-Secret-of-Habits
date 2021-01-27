@@ -28,12 +28,11 @@ const Habit = (props) => {
           <h5>Benefits: {singleHabit.fields.benefits}</h5>
         </div>
 
-        {/* <div>
-          {singleHabit.fields.images.map((picture) => {
-            return <img className="image" src={picture.url} />
-          })
-          }
-        </div> */}
+        <div className="imageContainer">
+  
+         <img className="image" src={singleHabit.fields.images} />
+
+        </div>
         
       
       </div>

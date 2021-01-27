@@ -29,7 +29,9 @@ form {
   margin: 0 auto;
   padding: 0;
   border-style: solid;
-  border-color:  #323031;
+  border-color:  #d2d2cf;
+  background-color:  #323031;
+  /* background-image: url(https://images.pond5.com/self-help-animated-word-cloud-footage-075582625_prevstill.jpeg); */
 }
 
 #benefitsTextarea {
@@ -63,13 +65,16 @@ button:hover {
   background-color: red;
 }
 
-.buttons {
+
+
+.formButton {
+  margin: 10px 10px;
 
 }
 
 h1 {
-  font-family: 'Merriweather', serif;
-  /* font-family: 'Marck Script', cursive; */
+  /* font-family: 'Merriweather', serif; */
+  font-family: 'Marck Script', cursive;
   text-align: center;
   font-size: 45px;
   text-shadow: 2px 2px white;
@@ -82,7 +87,12 @@ h3 {
 }
 
 h4 {
-  font-size: 50px;
+  font-size: 40px;
+  color:  #d2d2cf;
+  font-family: 'Marck Script', cursive;
+}
+label {
+  color:  #d2d2cf;
 }
 
 .home {
@@ -119,12 +129,14 @@ body {
 .list {
   text-align: center;
   font-family: 'Merriweather', serif;
-  font-size: 25px;
+  font-size: 40px;
   height: 97vh;
   width: 500px;
   margin: auto;
+  overflow: scroll;
   border-style: solid;
   border-color:  #323031;
+  background-color: #8E9AAF;
 }
 
 .list:hover {
@@ -149,7 +161,46 @@ margin: 0;
 }
 
 .image {
-  width: 100px;
+  min-height: 300px;
+  min-width: 100px;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+progress {
+  margin: auto;
+  align-items: center;
+}
+
+#image {
+  border-color: #323031;
+  height: 5vh;
+  width: 400px;
+}
+
+img {
+ width: 100px 100px;
+ height: 30vh;
+ justify-content: auto;
+ border-style: solid;
+border-color: #323031;
+align-items: center;
+}
+
+.searchBar {
+  margin-bottom: 40px;
+  width: 300px;
+  height: 50px;
+}
+
+.searchPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
 }
 
 

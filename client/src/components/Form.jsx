@@ -9,6 +9,7 @@ function Form(props) {
   const [habit, setHabit] = useState("");
   const [duration, setDuration] = useState("");
   const [benefits, setBenefits] = useState("");
+  const [images, setImages] = useState("");
   const history = useHistory()
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -18,6 +19,9 @@ function Form(props) {
       habit: habit,
       duration: duration,
       benefits: benefits,
+      images: images === ""
+          ? "https://i.ibb.co/xjQBgJs/Anonymous-Mask-Hd-Anonymous-mask-by.jpg"
+        : images,
     };
     
     await axios.post(baseURL, { fields }, config);
@@ -42,8 +46,18 @@ function Form(props) {
       <input className="habitDurationTextarea"
         name="duration"
         type="text"
+        placeholder="min. / hrs"
         value={duration}
         onChange={(e) => setDuration(e.target.value)} />
+      
+      <label htmlFor="images">Image:</label>
+        <input id="image"
+          name="images"
+          type="text"
+          placeholder="URL"
+          value={images}
+          onChange={(e) => setImages(e.target.value)}
+        />
       
       <label htmlFor="benefits">Benefits:</label>
       <textarea id='benefitsTextarea'

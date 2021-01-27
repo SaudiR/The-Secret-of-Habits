@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 const Habit = (props) => {
   const [singleHabit, setSingleHabit] = useState(null)
   const params = useParams()
+
+   // useParams will return an object of key/value pairs
   useEffect(() => {
     const results = props.dailyHabits.find(habit => (
       params.id === habit.id
@@ -29,9 +31,7 @@ const Habit = (props) => {
         </div>
 
         <div className="imageContainer">
-  
          <img className="image" src={singleHabit.fields.images} />
-
         </div>
         
       

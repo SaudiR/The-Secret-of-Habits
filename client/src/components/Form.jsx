@@ -11,6 +11,7 @@ function Form(props) {
   const [benefits, setBenefits] = useState("");
   const [images, setImages] = useState("");
   const history = useHistory()
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -26,7 +27,6 @@ function Form(props) {
     
     await axios.post(baseURL, { fields }, config);
     
-    console.log("success!");
     props.setToggle(prev => !prev)
     history.push("/allhabits")
   };

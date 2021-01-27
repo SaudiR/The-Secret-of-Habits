@@ -6,7 +6,7 @@ const Home = (props) => {
     <div className="home">
       <h1>Self-Improvement</h1>
       </div>
-      <h3></h3>
+      
       <div className="buttons">
       <Link style={{
         textDecoration: 'none',

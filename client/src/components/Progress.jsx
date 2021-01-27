@@ -9,14 +9,12 @@ const Progress = (props) => {
     if (date !== "") {
       const results = props.dailyHabits.
         filter((habit) => {
-          console.log(date)
-          console.log(habit.fields.time)
           return habit.fields.time === date
         })
       setFilteredHabits(results)
     }  
-    
-    if (props.search !== "") {
+    // create a new array with elements that passed the test implemented by the provided function.
+    if (props.search !== "" && props.dailyHabits) {
       const results = props.dailyHabits.filter((habit) => {
         return habit.fields.habit.toLowerCase().includes(props.search.toLowerCase())
       }) 

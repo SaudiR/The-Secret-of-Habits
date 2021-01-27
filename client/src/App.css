@@ -256,11 +256,11 @@ align-items: center;
 
 @media only screen and (min-width: 1024px) {
 body {
-    background-color: #463f3a;
+    background-color: #fde2e4;
   }
 
   .form {
-    background-color: #8a817c;
+    background-color: #f0efeb;
   }
 
   label, h4 {
